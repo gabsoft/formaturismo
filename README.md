@@ -9,7 +9,7 @@ Este repositorio esta divido em:
 
 - Wordpress Desenvolvido utilizando XAMPP
 - Deve ser executado na porta 8080
-- Para funcionamento do envio de e-mail necessario configurar os arquivos, caso utilizar xamp
+- Para funcionamento do envio de e-mail necessario configurar os arquivos, caso utilizar xampp
 
 `C:\xampp\php\php.ini`
 ##    (Adicionar)

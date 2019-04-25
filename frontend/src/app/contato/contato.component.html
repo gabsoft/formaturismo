@@ -1,5 +1,23 @@
 <div class="container">
-    <div class="icon">
 
+    <div class="icon">
+        <img [src]="logo[0].acf.medias">
+    </div>
+
+    <div class="titulo-formulario-contato">
+        <p>{{ logo[0].excerpt.rendered}}</p>
+    </div>
+
+    <div class="formulario-contato">
+        <form>
+            <input type="text" class="input-nome" placeholder="NOME COMPLETO">
+            <input type="email" class="input-email" placeholder="EMAIL">
+            <input type="text" class="input-escola" placeholder="ESCOLA">
+            <input type="text" class="input-cidade" placeholder="CIDADE">
+            <input type="text" class="input-estado" placeholder="ESTADO">
+            <input type="text" class="input-telefone" placeholder="TELEFONE">
+            <input type="text" class="input-mensagem" placeholder="MENSAGEM">
+
+        </form>
     </div>
 </div>

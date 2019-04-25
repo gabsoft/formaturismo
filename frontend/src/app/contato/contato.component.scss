@@ -2,4 +2,56 @@ div.container {
     background: url(../../assets/img/BG.png);
     width: 1920px;
     height: 1267px;
+
+    .icon {
+        padding-top: 91px;
+        text-align: center;
+    }
+
+    .titulo-formulario-contato {
+        margin-top: 66px;
+
+        p {
+            font-size: 27px;
+            text-align: center;
+            color: #ffffff;
+        }
+    }
+
+    .formulario-contato {
+        width: 1050px;
+        margin: 0 auto;
+        margin-top: 70px;
+
+        .input-nome, .input-email, .input-telefone, .input-escola {
+            width: 100%;
+            height: 47px;
+            border-radius: 10px;
+            background-color: #dadad4;
+        }
+
+        .input-cidade {
+            width: 716px;
+            height: 47px;
+            border-radius: 10px;
+            background-color: #dadad4;
+        }
+
+        .input-estado {
+            width: 311px;
+            margin-left: 15px;
+            height: 47px;
+            border-radius: 10px;
+            background-color: #dadad4;
+        }
+
+        .input-mensagem {
+            width: 100%;
+            height: 251px;
+            border-radius: 10px;
+            background-color: #dadad4;
+        }
+
+
+    }
 }

@@ -1,52 +1,28 @@
 <div class="container">
     <div class="icon">
-        <img src="assets/img/destino-icon.png">
+        <img [src]="logo[0].acf.medias">
     </div>
     <div class="titulo-parques">
-        <h3>TODOS OS PARQUES INCLUÍDOS</h3>
+        <h3>{{ logo[0].excerpt.rendered }}</h3>
     </div>
     <div class="cards-parques">
-        <ul>
-            <li class="cards-container">
-                <img src="assets/img/magic-kingdon.png">
-            </li>
-            <li class="cards-container">
-                <img src="assets/img/epcot.png">
-            </li>
-            <li class="cards-container">
-                <img src="assets/img/hollywood-studios.png">
-            </li>
-            <li class="cards-container">
-                <img src="assets/img/animal.png">
-            </li>
-            <li class="cards-container">
-                <img src="assets/img/magic-kingdon.png">
-            </li>
-            <li class="cards-container">
-                <img src="assets/img/universal.png">
-            </li>
-            <li class="cards-container">
-                <img src="assets/img/islands.png">
-            </li>
-            <li class="cards-container">
-                <img src="assets/img/wizarding.png">
-            </li>
-            <li class="cards-container">
-                <img src="assets/img/busch.png">
-            </li>
-            <li class="cards-container">
-                <img src="assets/img/seaworld.png">
+        <ul *ngIf="parques">
+            <li class="cards-container" *ngFor="let parque of parques">
+                <img [src]="parque.acf.medias">
+                <p class="cards-information">
+                    <span>{{ parque.title.rendered }}</span> <br><br><br>
+                    {{ parque.excerpt.rendered }}
+                </p>
             </li>
         </ul>
     </div>
 
     <div class="promocao-parque">
-        <img src="assets/img/pacote-top.png">
+        <img [src]='promo[0].acf.medias'>
     </div>
 
     <div class="promocao-informacao">
-        <p>**Disney Fast Pass: acesso sem filas nas principais atrações dos parques Disney; Universal Express: acesso sem filas nas principais atrações do
-                Universal Studios e Islands of Adventure; Quick Queue: acesso sem filas nas principais atrações do Sea World e Busch Gardens.</p>
+        <p>{{ promo[0].excerpt.rendered }}</p>
     </div>
 
 </div>

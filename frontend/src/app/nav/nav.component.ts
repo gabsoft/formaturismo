@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-nav',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  logo: Object
+
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.data.getNav().subscribe(data => {
+      this.logo = data;
+    })
   }
 
 }

@@ -23,8 +23,10 @@
                     <option *ngFor="let estado of estados" [value]="estado">{{estado}}</option>
             </select>
             <input type="text" formControlName="telefone" class="input-telefone" placeholder="TELEFONE">
-            <textarea formControlName="mensagem" class="input-mensagem"></textarea>
+            <textarea [(ngModel)]="chars" formControlName="mensagem" class="input-mensagem"></textarea>
+            <span class="charsCount">{{ 200 - chars.length }} of 200 characters left</span>
             <input [disabled]="messageForm.invalid" type="submit" value="Enviar" class="cta">
+             
         </form>
     </div>
 

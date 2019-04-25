@@ -1,0 +1,41 @@
+header {
+    background: url('../../assets/img/barrademenu.png') no-repeat;
+    height: 152px;
+    width: 1920px;
+
+    img {
+        margin-top: 1%;
+        height: 295px;
+        width: 487px;
+        position: absolute;
+        top: 29px;
+        left: 100px;
+    }
+
+    nav {
+        position: absolute;
+        width: 30%;
+        top: 60px;
+        left: 652px;
+    
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                font-size: 29px;
+                font-weight: 900;
+                text-align: left;
+                
+                a {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .container {
+        position: relative;
+        text-align: center;
+    }
+}

@@ -1,0 +1,61 @@
+div.container {
+    width: 1920px;
+    background: url('../../assets/img/BG-2.png');
+    height: 1744px;
+    
+
+    .icon {
+        padding-top: 60px;
+        height: 160px;
+        text-align: center;
+    }
+
+    .titulo-parques {
+        height: 192px;
+
+            h3 {
+                font-size: 57.5px;
+                font-weight: 900;
+                color: #ffffff;  
+                text-align: center;
+            }      
+    }
+
+    .cards-parques {
+        height: 805px;
+        width: 100%;
+        margin-bottom: 36px;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            li {
+                width: 322px;
+                height: 387px;
+                margin-right: 27px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .promocao-parque {
+        height: 354px;
+        img {
+            margin-left: 89px;
+            width: 1720px;
+        }
+    }
+
+    .promocao-informacao {
+        width: 1734px;
+        height: 57px;
+        font-family: Solomon-Sans;
+        font-size: 26.5px;
+        text-align: left;
+        color: #cccccc;
+        margin-left: 98px;
+    }
+}
+

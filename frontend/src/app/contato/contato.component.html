@@ -9,15 +9,25 @@
     </div>
 
     <div class="formulario-contato">
-        <form>
-            <input type="text" class="input-nome" placeholder="NOME COMPLETO">
-            <input type="email" class="input-email" placeholder="EMAIL">
-            <input type="text" class="input-escola" placeholder="ESCOLA">
-            <input type="text" class="input-cidade" placeholder="CIDADE">
-            <input type="text" class="input-estado" placeholder="ESTADO">
-            <input type="text" class="input-telefone" placeholder="TELEFONE">
-            <input type="text" class="input-mensagem" placeholder="MENSAGEM">
-
+        <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+            <h5 class="messageSend" *ngIf="success">Mensagem enviada com sucesso</h5>
+            <input type="text" formControlName="nome" class="input-nome" placeholder="NOME COMPLETO">
+            <input type="text" formControlName="email" class="input-email" placeholder="EMAIL">
+            <input type="text" formControlName="escola" class="input-escola" placeholder="ESCOLA">
+            <select class="input-cidade" formControlName="cidade">
+                    <option value="" disabled selected>Cidade</option>
+                    <option *ngFor="let cidade of cidades" [value]="cidade">{{cidade}}</option>
+            </select>
+            <select class="input-estado" formControlName="estado">
+                    <option value="" disabled selected>Estado</option>
+                    <option *ngFor="let estado of estados" [value]="estado">{{estado}}</option>
+            </select>
+            <input type="text" formControlName="telefone" class="input-telefone" placeholder="TELEFONE">
+            <textarea formControlName="mensagem" class="input-mensagem"></textarea>
+            <input [disabled]="messageForm.invalid" type="submit" value="Enviar" class="cta">
         </form>
     </div>
+
+
+
 </div>

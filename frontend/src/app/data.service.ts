@@ -23,4 +23,12 @@ export class DataService {
   getContato() {
     return this.http.get('http://localhost:8080/wordpress/wp-json/wp/v2/posts/?categories=7&&per_page=100')
   }
+
+  getCities(){
+    return this.http.get('http://localhost:3000/cities')
+  }
+  
+  getStates(){
+    return this.http.get('http://localhost:3000/states')
+  }
 }

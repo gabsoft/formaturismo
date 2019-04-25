@@ -22,6 +22,19 @@ div.container {
         width: 1050px;
         margin: 0 auto;
         margin-top: 70px;
+        
+        .messageSend {
+            font-weight: 900;
+            color: #ffffff;
+        }
+        .error {
+            margin-top: -20px;
+            background: yellow;
+            padding: .5em;
+            display: inline-block;
+            font-size: .9em;
+            margin-bottom: 20px;
+        }
 
         .input-nome, .input-email, .input-telefone, .input-escola {
             width: 100%;
@@ -43,6 +56,10 @@ div.container {
             height: 47px;
             border-radius: 10px;
             background-color: #dadad4;
+
+            option {
+                color: black;
+            }
         }
 
         .input-mensagem {
@@ -52,6 +69,21 @@ div.container {
             background-color: #dadad4;
         }
 
+        input[type=submit] {
+            width: 211px;
+            height: 58px;
+            border-radius: 10px;
+            background-color: #b30d14;
+            font-size: 22px;
+            text-align: center;
+            color: #ffffff;
+            margin-left: 843px;
+        }
+
+        input[disabled] {
+            opacity: 0.5;
+        }
+        
 
     }
 }

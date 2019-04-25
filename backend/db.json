@@ -1,0 +1,8 @@
+{
+    "cities": [
+        "Sao Paulo", "Barueri", "Parana", "Florianopolis", "Itumbiara", "Rio de Janeiro"
+    ],
+    "states": [
+        "Sao Paulo", "Rio de Janeiro", "Minas Gerais", "Santa Catarina"
+    ]
+}

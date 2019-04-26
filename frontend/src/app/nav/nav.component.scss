@@ -1,22 +1,22 @@
 header {
     background: url('../../assets/img/barrademenu.png') no-repeat;
     height: 152px;
-    width: 1920px;
+    width: 100%;
 
     img {
         margin-top: 1%;
         height: 295px;
         width: 487px;
         position: absolute;
-        top: 29px;
-        left: 100px;
+        top: 10px;
+        left: 5%;
     }
 
     nav {
         position: absolute;
         width: 30%;
         top: 60px;
-        left: 652px;
+        left: 34%;
     
         ul {
             display: flex;
@@ -37,5 +37,56 @@ header {
     .container {
         position: relative;
         text-align: center;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+    header {
+        background: url('../../assets/img/barrademenu.png');
+        height: 300px;
+        width: 100%;
+
+        img {
+            margin-top: 1%;
+            height: 150px;
+            width: 250px;
+            position: absolute;
+            top: 0;
+            left: 20%;
+        }
+    
+
+        nav {
+            position: static;
+            width: 100%;
+            height: 100%;
+            padding-top: 150px;
+        
+            ul {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                
+                li {
+                    font-size: 29px;
+                    font-weight: 900;
+                    text-align: center;
+                    padding-top: 10px;
+                    
+                    a {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        .container {
+            text-align: center;
+        }
     }
 }

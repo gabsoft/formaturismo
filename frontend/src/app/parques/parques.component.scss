@@ -1,7 +1,7 @@
 div.container {
-    width: 1920px;
-    background: url('../../assets/img/BG-2.png');
-    height: 1744px;
+    width: 100%;
+    background: url('../../assets/img/BG-2.png') repeat;
+    height: 100%;
     
 
     .icon {
@@ -22,9 +22,9 @@ div.container {
     }
 
     .cards-parques {
-        height: 805px;
         width: 100%;
         margin-bottom: 36px;
+        height: 100%;
 
         ul {
             display: flex;
@@ -68,16 +68,17 @@ div.container {
     }
 
     .promocao-parque {
-        height: 354px;
+        height: 100%;
+        width: 100%;
         img {
-            margin-left: 89px;
-            width: 1720px;
+            margin-left: 4.5%;
+            width: 89.5%;
         }
     }
 
     .promocao-informacao {
-        width: 1734px;
-        height: 57px;
+        width: 89.5%;
+        height: 100%;
         font-family: Solomon-Sans;
         font-size: 26.5px;
         text-align: left;
@@ -86,3 +87,101 @@ div.container {
     }
 }
 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    div.container {
+        width: 100%;
+        background: url('../../assets/img/BG-2.png') center center repeat;
+        height: 100%;
+        
+    
+        .icon {
+            padding-top: 60px;
+            height: 160px;
+            text-align: center;
+        }
+    
+        .titulo-parques {
+            height: 120px;
+    
+                h3 {
+                    font-size: 30px;
+                    font-weight: 900;
+                    color: #ffffff;  
+                    text-align: center;
+                }      
+        }
+    
+        .cards-parques {
+            width: 100%;
+            margin-bottom: 36px;
+            height: 100%;
+    
+            ul {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                align-items: center;
+                
+                li:hover p.cards-information {
+                    visibility: visible;
+                    opacity: 1;
+                } 
+                li {
+                    width: 322px;
+                    height: 387px;
+                    margin-right: 0;
+                    margin-bottom: 30px;
+                    position: relative;
+    
+                    p.cards-information {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        padding-top: 20px;
+                        background: rgba(255, 255, 255, 0.3);
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        color: #fff;
+                        visibility: hidden;
+                        opacity: 0;
+                        font-size: 18px;
+                        text-align: center;
+                        color: #ffffff;
+                        
+                        span {
+                            font-weight: 900
+                        }
+                    }
+                }
+            }
+        }
+    
+        .promocao-parque {
+            height: 100%;
+            bottom: 100%;
+
+            img {
+                margin-left: 0;
+                width: 100%;;
+            }
+        }
+    
+        .promocao-informacao {
+            width: 100%;
+            height: 100%;
+            font-family: Solomon-Sans;
+            font-size: 20px;
+            font-weight: 900;
+            text-align: left;
+            color: #cccccc;
+            margin-left: 0;
+        }
+    }
+}

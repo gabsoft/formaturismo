@@ -1,7 +1,7 @@
 div.container {
     background: url(../../assets/img/BG.png);
-    width: 1920px;
-    height: 1267px;
+    width: 100%;
+    height: 100%;
 
     .icon {
         padding-top: 91px;
@@ -19,7 +19,7 @@ div.container {
     }
 
     .formulario-contato {
-        width: 1050px;
+        width: 55%;
         margin: 0 auto;
         margin-top: 70px;
         
@@ -42,14 +42,14 @@ div.container {
         }
 
         .input-cidade {
-            width: 716px;
+            width: 70%;
             height: 47px;
             border-radius: 10px;
             background-color: #dadad4;
         }
 
         .input-estado {
-            width: 311px;
+            width: 27%;
             margin-left: 15px;
             height: 47px;
             border-radius: 10px;
@@ -75,7 +75,7 @@ div.container {
             font-size: 22px;
             text-align: center;
             color: #ffffff;
-            margin-left: 843px;
+            margin-left: 70%;
         }
 
         input[disabled] {
@@ -84,4 +84,105 @@ div.container {
         
 
     }
+}
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+    div.container {
+        background: url(../../assets/img/BG.png) center center repeat;
+        width: 100%;
+        height: 100%;
+    
+        .icon {
+            padding-top: 91px;
+            text-align: center;
+            
+            img {
+                width: 100%;
+            }
+        }
+    
+        .titulo-formulario-contato {
+            margin-top: 66px;
+    
+            p {
+                font-size: 27px;
+                text-align: center;
+                color: #ffffff;
+            }
+        }
+    
+        .formulario-contato {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 70px;
+            
+            .messageSend {
+                font-weight: 900;
+                color: #ffffff;
+            }
+    
+            .charsCount{
+                font-weight: 900;
+                color: #ffffff;
+                font-size: 0.8em;
+            }
+    
+            .input-nome, .input-email, .input-telefone, .input-escola {
+                width: 100%;
+                height: 47px;
+                border-radius: 10px;
+                background-color: #dadad4;
+            }
+    
+            .input-cidade {
+                width: 70%;
+                height: 47px;
+                border-radius: 10px;
+                background-color: #dadad4;
+            }
+    
+            .input-estado {
+                width: 26%;
+                margin-left: 15px;
+                height: 47px;
+                border-radius: 10px;
+                background-color: #dadad4;
+    
+                option {
+                    color: black;
+                }
+            }
+    
+            .input-mensagem {
+                width: 100%;
+                height: 251px;
+                border-radius: 10px;
+                background-color: #dadad4;
+            }
+    
+            input[type=submit] {
+                width: 100%;
+                height: 58px;
+                border-radius: 10px;
+                background-color: #b30d14;
+                font-size: 22px;
+                margin-left: 0;
+                text-align: center;
+                color: #ffffff;
+            }
+    
+            input[disabled] {
+                opacity: 0.5;
+            }
+            
+    
+        }
+    }
+
 }

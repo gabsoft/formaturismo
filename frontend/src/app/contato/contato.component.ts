@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import {FormBuilder, FormGroup, Validators } from '@angular/forms'
-import { StringifyOptions } from 'querystring';
 import { ContatoForm } from './contatoForm'
 import { HttpClient } from '@angular/common/http';
 
